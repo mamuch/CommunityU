@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.endurance.mamuch.communityu.register">
+
+    <RelativeLayout
+        android:layout_width="425dp"
+        android:layout_height="657dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/plainWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="48dp"
+            android:contentDescription="@string/community_logo"
+            app:srcCompat="@drawable/culogo1"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:text="@string/welcometext"
+            android:textColor="@color/darkblue"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_alignEnd="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/register_notice"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/darkblue"
+            android:textSize="16sp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="340dp"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/firstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:hint="@string/first_name"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/darkblue" />
+
+                <EditText
+                    android:id="@+id/lastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:hint="@string/last_name"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/darkblue" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/emailaddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/inputbackground"
+                android:ems="10"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColorHint="@color/darkblue" />
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/inputbackground"
+                android:ems="10"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:textAlignment="center"
+                android:textColorHint="@color/darkblue" />
+
+            <EditText
+                android:id="@+id/regpassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/inputbackground"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColorHint="@color/darkblue" />
+
+            <EditText
+                android:id="@+id/reenterpassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/inputbackground"
+                android:ems="10"
+                android:hint="@string/re_enter_password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColorHint="@color/darkblue" />
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/inputbackground"
+                android:ems="10"
+                android:hint="@string/usernamereg"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColorHint="@color/darkblue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/orsignin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/signinback"
+                    android:text="@string/or_signin"
+                    android:textColor="@color/plainWhite"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/regbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/regback"
+                    android:text="@string/register_reg"
+                    android:textColor="@color/plainWhite"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/illustration"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/illust"
+            android:contentDescription="@string/background_image" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

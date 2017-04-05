@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/feedActivity"
+    android:background="@color/lightgrey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/feedTittle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/feed"
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/ScrollViewFeed"
+        android:layout_width="fill_parent"
+        android:layout_height="564dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/userPost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <LinearLayout
+                    android:id="@+id/card_start"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/card_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:background="@drawable/userpostbackground"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/card_user_info_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/imageView6"
+                                android:layout_width="140dp"
+                                android:layout_height="60dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                app:srcCompat="@drawable/bola_profile_picture" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="start"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/username"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/nyibol_magok"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/darkblue"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/on_now"
+                                    android:textColor="@color/LightGreen" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/options"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="Options"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="6dp"
+                            android:text="@string/bola_post"
+                            android:textColor="@color/darkblue" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/userpostbackground"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/voteup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="VoteUp"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+
+                            <Button
+                                android:id="@+id/comment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="Comments"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+
+                            <Button
+                                android:id="@+id/button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="Support"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userPost2"
+                android:layout_width="match_parent"
+                android:layout_height="442dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="6dp">
+
+
+                <LinearLayout
+                    android:id="@+id/card_start2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/card_body2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/userpostbackground"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/card_user_info_top2"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/imageView62"
+                                android:layout_width="140dp"
+                                android:layout_height="60dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                app:srcCompat="@drawable/bola_profile_picture" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="start"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/username2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/mamuch_john"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/darkblue"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/timePost"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/on_2hr_ago"
+                                    android:textColor="@color/BrightRed" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/button42"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="Options"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/userpostbackground"
+                            app:srcCompat="@drawable/bola_profile_picture" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userPost3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="6dp">
+
+                <LinearLayout
+                    android:id="@+id/card_start3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/card_body3"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:background="@drawable/userpostbackground"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/card_user_info_top3"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/imageView63"
+                                android:layout_width="140dp"
+                                android:layout_height="60dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                app:srcCompat="@drawable/bola_profile_picture" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="start"
+                                android:layout_marginTop="6dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/username3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Michele Kibe"
+                                    android:textColor="@color/darkblue"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView83"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/on_now"
+                                    android:textColor="@color/LightGreen" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/button43"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="Options"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="6dp"
+                            android:textSize="20dp"
+                            android:textAlignment="center"
+                            android:text="@string/michiPost"
+                            android:textColor="@color/darkblue" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="Vote"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+
+                            <Button
+                                android:id="@+id/button23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="Comments"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="Support"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userPost4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="6dp">
+
+                <LinearLayout
+                    android:id="@+id/card_start4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/card_body4"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:background="@drawable/userpostbackground"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/card_user_info_top4"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/imageView64"
+                                android:layout_width="140dp"
+                                android:layout_height="60dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                app:srcCompat="@drawable/bola_profile_picture" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="start"
+                                android:layout_marginTop="6dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/username4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/jimmy_falon"
+                                    android:textColor="@color/darkblue"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView84"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/on_now"
+                                    android:textColor="@color/LightGreen" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/button44"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="Options"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="6dp"
+                            android:text="@string/jimmpost"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:textColor="@color/darkblue" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button34"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="VoteUp"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+
+                            <Button
+                                android:id="@+id/button24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="Comments"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+
+                            <Button
+                                android:id="@+id/button4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="Support"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userPost5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp">
+
+                <LinearLayout
+                    android:id="@+id/card_start5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/card_body5"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:background="@drawable/userpostbackground"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/card_user_info_top5"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/imageView65"
+                                android:layout_width="140dp"
+                                android:layout_height="60dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                app:srcCompat="@drawable/bola_profile_picture" />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="start"
+                                android:layout_marginTop="6dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/username5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/nyibol_magok"
+                                    android:textColor="@color/darkblue"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView85"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/on_now"
+                                    android:textColor="@color/LightGreen" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/button45"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="Options"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="6dp"
+                            android:text="@string/bolapostfootbal"
+                            android:textSize="20dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/darkblue" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="VoteUp"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+
+                            <Button
+                                android:id="@+id/button25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/userpostbackground"
+                                android:text="Comments"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+
+                            <Button
+                                android:id="@+id/button5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/plainWhite"
+                                android:text="Support"
+                                android:textColor="@color/darkblue"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/feedTittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/feed"
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

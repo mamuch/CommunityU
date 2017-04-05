@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/feed_tab"
+        android:enabled="true"
+        android:icon="@drawable/home_tab"
+        android:title="@string/feed"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/compaign_tab"
+        android:enabled="true"
+        android:icon="@drawable/community_tab"
+        android:title="@string/compaign"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/chat_tab"
+        android:enabled="true"
+        android:icon="@drawable/chat_tab"
+        android:title="@string/chat"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/news_tab"
+        android:enabled="true"
+        android:title="@string/news"
+        android:icon="@drawable/news_tab"
+        app:showAsAction="withText"/>
+</menu>

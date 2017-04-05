@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/plainWhite"
+    tools:context="com.endurance.mamuch.communityu.home">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="643dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/culogo1"
+            android:contentDescription="@string/background_image"
+            android:layout_above="@+id/welcometext"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/welcometext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcometext"
+            android:textColor="@color/darkblue"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/textView4"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/darkblue"
+            android:textSize="20sp"
+            android:text="@string/notice"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/login_main"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/login_main"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            android:layout_above="@+id/illustration"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/inputbackground"
+                android:ems="10"
+                android:hint="@string/username"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/darkblue"
+                android:textColorHint="@color/darkblue" />
+
+            <EditText
+                android:id="@+id/iptpassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/inputbackground"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColorHint="@color/darkblue" />
+
+            <Button
+                android:id="@+id/btnsignin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signinback"
+                android:text="@string/signin"
+                android:textColor="@color/plainWhite" />
+
+            <Button
+                android:id="@+id/btnregister"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/regback"
+                android:onClick="register"
+                android:text="@string/register"
+                android:textColor="@color/plainWhite" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/forgotpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/helpbut"
+                    android:text="@string/forgotpassword"
+                    android:textColor="@color/darkblue" />
+
+                <Button
+                    android:id="@+id/aboutcu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/helpbut"
+                    android:text="@string/about"
+                    android:textColor="@color/darkblue" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/illustration"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            app:srcCompat="@drawable/illust"
+            android:contentDescription="@string/background_image"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
